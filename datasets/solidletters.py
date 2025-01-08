@@ -64,7 +64,7 @@ class SolidLetters(BaseDataset):
                 file_paths = train_files
             elif split == "val":
                 file_paths = val_files
-        elif split == "test":
+        elif split == "test": # TODO warum holt er beim testen keine labels?
             file_paths = _get_filenames(path, filelist="test.txt")
 
         print(f"Loading {split} data...")
